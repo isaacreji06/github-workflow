@@ -1,0 +1,86 @@
+/* Prompt: Style the Whack-a-Mole game with a fun theme, center everything, responsive 3x3 grid, color animations when a mole appears */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #c2e59c, #64b3f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  color: #ff3e3e;
+  font-size: 2rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#start {
+  background-color: #1dd1a1;
+  color: white;
+}
+
+#reset {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.hole {
+  width: 80px;
+  height: 80px;
+  background-color: #333;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.hole.mole {
+  background: radial-gradient(circle at 30% 30%, #ff9f43, #e58e26);
+  box-shadow: 0 0 15px #f39c12;
+}
+
+.game-over {
+  display: none;
+  margin-top: 1rem;
+}
+
+#play-again {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f1c40f;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
