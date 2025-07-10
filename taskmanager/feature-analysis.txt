@@ -1,0 +1,27 @@
+Feature Analysis Report
+PROJECT: Task Manager App
+FEEDBACK ANALYZED: None (feature chosen based on obvious user need)
+
+ QUICK WIN IDENTIFIED
+Feature: Use localStorage to store tasks
+
+Impact: High
+
+Effort: Low
+
+SELECTED FEATURE
+localStorage support for saving tasks
+
+REASON
+Without saving tasks between sessions, the app loses usability. This feature ensures that users' tasks persist even after a page refresh, solving a major real-world issue.
+
+USER STORY
+“As someone using this task app, I want my tasks to be saved in the browser so I don’t lose them.”
+
+KEY COPILOT PROMPT USED
+// add tasks to the localstorage
+// Load tasks from localStorage on page load
+
+IMPLEMENTATION SUMMARY
+I added saveTasks() to serialize tasks and store them in localStorage, and modified the addTask() and window.onload functions to save and reload tasks.
+
