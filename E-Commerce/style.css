@@ -24,7 +24,8 @@ nav a:hover {
 }
 /* Style the hero section with a bold background */
 .hero {
-  background: linear-gradient(135deg, #ff6a00, #ffb347);
+    background-color: #ff6a00; /* Fallback color */
+  /* background: linear-gradient(135deg, #ff6a00, #ffb347); */
   color: white;
   padding: 100px 0;
   text-align: center;
