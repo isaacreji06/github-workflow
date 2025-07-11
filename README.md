@@ -74,3 +74,8 @@ Review PRs and merge using feature branches together
 Dedicate one session on wandering through prompt patterns and evaluating outputs
 Sprint plan with buffer time, adhere to daily to-do checklist
 Have backup saves of functional code, debug in pairs
+
+## Tic Tac Toe Game
+Handle restart button functionality was not called in the original code
+The game won and the game draw functions were not called properly in the original code
+The highlighted winning cells were not reset in the original code
