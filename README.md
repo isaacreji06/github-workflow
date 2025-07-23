@@ -79,3 +79,4 @@ Have backup saves of functional code, debug in pairs
 Handle restart button functionality was not called in the original code
 The game won and the game draw functions were not called properly in the original code
 The highlighted winning cells were not reset in the original code
+
